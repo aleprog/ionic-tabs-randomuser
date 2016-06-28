@@ -1,0 +1,13 @@
+<ion-view view-title="Empleados">
+    <ion-content>
+        <div class="list">
+            <a class="item item-avatar"
+                ng-repeat="empleado in ctrl.empleados"
+                ui-sref="tabs.detalles-empleado({ indiceEmpleado: $index })">
+                <img ng-src="{{ empleado.picture.thumbnail }}">
+                <h2>{{ empleado.name.first + ' ' + empleado.name.last | uppercase}}</h2>
+                <p>{{ empleado.email }}</p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

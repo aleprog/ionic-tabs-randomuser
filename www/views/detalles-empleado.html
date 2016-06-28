@@ -1,0 +1,22 @@
+<ion-view view-title="Detalles empleado">
+    <ion-content>
+        <div class="list card">
+
+            <div class="item item-avatar">
+                <img ng-src="{{ ctrl.datosEmpleado.picture.thumbnail }}">
+                <h2>{{ ctrl.datosEmpleado.name.first + ' ' + ctrl.datosEmpleado.name.last | uppercase}}</h2>
+                <p>{{ ctrl.datosEmpleado.email }}</p>
+            </div>
+
+            <div class="item item-body">
+                <img class="full-image" ng-src="{{ ctrl.datosEmpleado.picture.large }}">
+                <p>
+                    This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+                    the content is from a card-body consisting of an image and paragraph text. The footer
+                    consists of tabs, icons aligned left, within the card-footer.
+                </p>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>
